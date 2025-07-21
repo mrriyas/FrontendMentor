@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:wght@400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --secondary: hsl(213deg, 20%, 22%);
+}
+
+body {
+    font-family: "Overpass", sans-serif;
+    font-size: 15px;
+    background: var(--VeryDarkBlue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#mainContainer {
+    background: var(--DarkBlue);
+    border-radius: 20px;
+    display: flex;
+    padding: 2rem;
+    width: 390px;
+
+}
+
+.imgBg {
+    background-color: var(--secondary);
+    width: fit-content;
+    padding: 0.7rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+h1{
+    color: var(--White);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#paraMessage {
+    color: var(--MediumGrey);
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    width: 100%;
+}
+
+.numberButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+
+
+}
+
+.numberButtons div {
+    background-color: var(--secondary);
+    padding: 1rem;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--LightGrey);
+}
+.numberButtons div:hover{
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+
+
+
+button {
+    padding: 0.8rem;
+    width: 100%;
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 20px;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: var(--White);
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    cursor: pointer;
+
+}
+button:active{
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
+.thankyouMessage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#resultMessage{
+    background-color: var(--secondary);
+    padding:0.4rem 0.9rem ;
+    border-radius: 20px;
+    text-align: center;
+    color: var(--Orange);
+    margin: 1.5rem 0;
+}
+h2{
+    color: var(--White);
+    margin: 0.4rem 0 1rem 0rem;
+}
+#paraThankyou{
+    color: var(--LightGrey);
+    line-height: 1.5;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.thankyouMessage.hide ,.ratingWindow.hide{
+    display: none;
+}
+
