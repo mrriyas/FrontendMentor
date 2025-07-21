@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+
+*{
+    box-sizing: 0px;
+}
+
+:root {
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-size: 28px;
+    display:grid;
+    place-items:center;
+    height: 100vh;
+    background-color: var(--DarkBlue);
+   
+
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 30rem;
+    height: 20rem;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: var(--DarkGrayishBlue);
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+h4{
+    text-transform: uppercase;
+    color: var(--NeonGreen);
+    font-size: 1.2rem;
+    letter-spacing: 2.5px;
+    margin-top: 4rem;
+}
+p{
+ color: var(--LightCyan);
+text-align: center;
+margin: 0.2rem 0 0.2rem 0;
+font-size: 1.9rem;
+ 
+}
+.imgdiv{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+   
+    
+
+}
+
+#end {
+width: 100%;
+margin: 1.5rem;
+
+}
+.btn-bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--NeonGreen);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 4rem 3rem 0rem 3rem;
+}
+.btn-bg:hover {
+    color: var(--NeonGreen);
+    box-shadow: 0 0 20px var(--NeonGreen);
+    cursor: pointer;
+    }
+
+#button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
